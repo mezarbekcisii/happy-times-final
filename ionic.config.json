@@ -1,0 +1,19 @@
+{
+  "name": "HappyTimes",
+  "integrations": {
+    "capacitor": {
+      "buildCommand": "npm run build"
+    }
+  },
+  "type": "react-vite",
+  "id": "8ef56b0b",
+  "appId": "com.happytimes.app",
+  "hooks": {
+    "build:before": "npm run build"
+  },
+  "android": {
+    "build": {
+      "gradleWrapperPath": "gradlew"
+    }
+  }
+}

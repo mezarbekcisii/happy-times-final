@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test - HappyTime</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #FEF3C7, #FED7AA, #FECACA);
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 600px;
+        }
+        .logo {
+            font-size: 2.5rem;
+            font-weight: bold;
+            background: linear-gradient(45deg, #F59E0B, #EF4444);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 20px;
+        }
+        .success {
+            color: #059669;
+            font-size: 1.2rem;
+            margin: 20px 0;
+        }
+        .info {
+            color: #7C2D12;
+            margin: 10px 0;
+        }
+        .button {
+            background: linear-gradient(45deg, #F59E0B, #EF4444);
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            margin: 10px;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">🎉 HappyTime</div>
+        <div class="success">✅ Server Başarıyla Çalışıyor!</div>
+        <div class="info">🌐 Port: 3003</div>
+        <div class="info">🚀 Vite Development Server Aktif</div>
+        <div class="info">📁 Dosyalar Yüklendi</div>
+        
+        <h2>🎯 Test Başarılı!</h2>
+        <p>Bu sayfayı görüyorsanız, server çalışıyor demektir.</p>
+        <p>React uygulamasında bir sorun olabilir.</p>
+        
+        <div>
+            <a href="/" class="button">🏠 Ana Sayfa</a>
+            <a href="/profile" class="button">👤 Profil</a>
+            <a href="/admin" class="button">🎛️ Admin</a>
+        </div>
+        
+        <div style="margin-top: 30px; padding: 20px; background: #FEF3C7; border-radius: 10px;">
+            <h3>🔧 Sorun Giderme:</h3>
+            <p>1. Tarayıcı konsolunu açın (F12)</p>
+            <p>2. Hata mesajlarını kontrol edin</p>
+            <p>3. Cache'i temizleyin (Ctrl+F5)</p>
+        </div>
+    </div>
+    
+    <script>
+        console.log('✅ Test sayfası yüklendi!');
+        console.log('🌐 Server: http://localhost:3003');
+        console.log('📍 Current URL:', window.location.href);
+        
+        // React app'in yüklenip yüklenmediğini kontrol et
+        setTimeout(() => {
+            const root = document.getElementById('root');
+            if (root) {
+                console.log('🔍 React root element bulundu');
+            } else {
+                console.log('❌ React root element bulunamadı');
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
+

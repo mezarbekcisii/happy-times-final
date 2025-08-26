@@ -1,0 +1,16 @@
+{
+  "apps": [
+    {
+      "root": ".",
+      "id": "8ef56b0b",
+      "appId": "com.happytimes.app"
+    }
+  ],
+  "environments": {
+    "production": {
+      "build": {
+        "beforeHooks": ["npm run build"]
+      }
+    }
+  }
+}
