@@ -6,7 +6,7 @@
     }
   },
   "type": "react-vite",
-  "id": "ee95ebb2",
+  "id": "b789e4f0",
   "appId": "com.happytimes.app",
   "hooks": {
     "build:before": "npm run build"
